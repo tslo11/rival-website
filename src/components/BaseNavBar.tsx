@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom';
 import { NAV_BAR } from '../constants';
 import { NavBarItem } from '../interfaces';
 
-
 interface OwnProps {
 }
 
@@ -25,8 +24,8 @@ class BaseNavBar extends React.PureComponent<OwnProps & ConnectedProps & Connect
       <div className="base-nav-bar">
         <div className="base-nav-bar-items">
           {_.map(NAV_BAR, (navBarItem: NavBarItem, index) => (
-            <Link 
-              key={navBarItem.key} 
+            <Link
+              key={navBarItem.key}
               className="base-nav-bar-item"
               to={navBarItem.route}
             >

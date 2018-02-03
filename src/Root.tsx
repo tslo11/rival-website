@@ -9,6 +9,8 @@ import Results from './pages/Results';
 import Roster from './pages/Roster';
 import BadgeQuest from './pages/BadgeQuest';
 import FiftyPlates from './pages/FiftyPlates';
+import TotsSucks from './pages/TotsSucks';
+import TotsInDresses from './pages/TotsInDresses';
 
 import configureStore from './store/configureStore';
 import { INITIAL_STATE } from './constants';
@@ -28,6 +30,8 @@ export class Root extends React.PureComponent<{}, {}> {
             <Route path="/roster" component={Roster} />
             <Route path="/badgequest" component={BadgeQuest} />
             <Route path="/fiftyplates" component={FiftyPlates} />
+            <Route path="/totssucks" component={TotsSucks} />
+            <Route path="/totsindresses" component={TotsInDresses} />
           </div>
         </Router >
       </Provider>
